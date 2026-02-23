@@ -7,13 +7,6 @@ import 'geocoding_ios.dart';
 /// [GeocodingPlatformFactory] and provides platform-specific
 /// [Geocoding] objects.
 class GeocodingIOSFactory extends GeocodingPlatformFactory {
-  /// Registers this iOS implementation as the active factory.
-  ///
-  /// This method is invoked automatically by Flutter's plugin
-  /// registration system.
-  static void registerWith() {
-    GeocodingPlatformFactory.instance = GeocodingIOSFactory();
-  }
 
   @override
   Geocoding createGeocoding(GeocodingCreationParams params) {

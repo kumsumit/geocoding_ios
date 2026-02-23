@@ -1,5 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:geocoding_ios/geocoding_ios.dart';
 import 'package:geocoding_ios/geocoding_ios_factory.dart';
 import 'package:geocoding_platform_interface/geocoding_platform_interface.dart';
 
@@ -34,7 +35,7 @@ void main() {
     log = <MethodCall>[];
 
     // Register factory
-    GeocodingIOSFactory.registerWith();
+    GeocodingIOS.registerWith();
 
     _setMockHandler((methodCall) async {
       log.add(methodCall);

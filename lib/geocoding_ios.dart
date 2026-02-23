@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 
 import 'package:flutter/services.dart';
+import 'package:geocoding_ios/geocoding_ios_factory.dart';
 import 'package:geocoding_platform_interface/geocoding_platform_interface.dart';
 
 /// iOS implementation of the [Geocoding] interface.
@@ -23,6 +24,14 @@ class GeocodingIOS extends Geocoding {
   /// This constructor must call [Geocoding.implementation] to properly
   /// register with the platform interface verification system.
   GeocodingIOS(super.params) : super.implementation();
+
+   /// Registers this iOS implementation as the active factory.
+  ///
+  /// This method is invoked automatically by Flutter's plugin
+  /// registration system.
+  static void registerWith() {
+    GeocodingPlatformFactory.instance = GeocodingIOSFactory();
+  }
 
   /// The method channel used to communicate with the native iOS layer.
   ///
