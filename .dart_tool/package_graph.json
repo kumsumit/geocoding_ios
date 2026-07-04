@@ -26,7 +26,7 @@
     },
     {
       "name": "mockito",
-      "version": "5.6.3",
+      "version": "5.7.0",
       "dependencies": [
         "analyzer",
         "build",
@@ -88,12 +88,12 @@
     },
     {
       "name": "meta",
-      "version": "1.17.0",
+      "version": "1.18.3",
       "dependencies": []
     },
     {
       "name": "test_api",
-      "version": "0.7.9",
+      "version": "0.7.12",
       "dependencies": [
         "async",
         "boolean_selector",
@@ -113,7 +113,7 @@
     },
     {
       "name": "matcher",
-      "version": "0.12.18",
+      "version": "0.12.20",
       "dependencies": [
         "async",
         "meta",
@@ -129,7 +129,7 @@
     },
     {
       "name": "vector_math",
-      "version": "2.2.0",
+      "version": "2.4.0",
       "dependencies": []
     },
     {
@@ -213,6 +213,13 @@
       ]
     },
     {
+      "name": "package_config",
+      "version": "2.2.0",
+      "dependencies": [
+        "path"
+      ]
+    },
+    {
       "name": "term_glyph",
       "version": "1.2.2",
       "dependencies": []
@@ -226,42 +233,50 @@
       ]
     },
     {
-      "name": "async",
-      "version": "2.13.0",
+      "name": "analyzer",
+      "version": "13.3.0",
       "dependencies": [
+        "_fe_analyzer_shared",
         "collection",
+        "convert",
+        "crypto",
+        "glob",
+        "meta",
+        "package_config",
+        "path",
+        "pub_semver",
+        "source_span",
+        "watcher",
+        "yaml"
+      ]
+    },
+    {
+      "name": "_fe_analyzer_shared",
+      "version": "103.0.0",
+      "dependencies": [
         "meta"
       ]
     },
     {
-      "name": "string_scanner",
-      "version": "1.4.1",
+      "name": "pub_semver",
+      "version": "2.2.0",
       "dependencies": [
-        "source_span"
+        "collection"
       ]
     },
     {
-      "name": "source_span",
-      "version": "1.10.2",
+      "name": "typed_data",
+      "version": "1.4.0",
+      "dependencies": [
+        "collection"
+      ]
+    },
+    {
+      "name": "async",
+      "version": "2.13.1",
       "dependencies": [
         "collection",
-        "path",
-        "term_glyph"
-      ]
-    },
-    {
-      "name": "source_gen",
-      "version": "4.2.0",
-      "dependencies": [
-        "analyzer",
-        "async",
-        "build",
-        "dart_style",
-        "glob",
-        "path",
-        "pub_semver",
-        "source_span",
-        "yaml"
+        "meta"
       ]
     },
     {
@@ -274,10 +289,25 @@
       ]
     },
     {
-      "name": "pub_semver",
-      "version": "2.2.0",
+      "name": "string_scanner",
+      "version": "1.4.1",
       "dependencies": [
-        "collection"
+        "source_span"
+      ]
+    },
+    {
+      "name": "convert",
+      "version": "3.1.2",
+      "dependencies": [
+        "typed_data"
+      ]
+    },
+    {
+      "name": "watcher",
+      "version": "1.2.1",
+      "dependencies": [
+        "async",
+        "path"
       ]
     },
     {
@@ -300,77 +330,12 @@
       ]
     },
     {
-      "name": "dart_style",
-      "version": "3.1.5",
+      "name": "source_span",
+      "version": "1.10.2",
       "dependencies": [
-        "analyzer",
-        "args",
         "collection",
-        "package_config",
         "path",
-        "pub_semver",
-        "source_span",
-        "yaml"
-      ]
-    },
-    {
-      "name": "package_config",
-      "version": "2.2.0",
-      "dependencies": [
-        "path"
-      ]
-    },
-    {
-      "name": "args",
-      "version": "2.7.0",
-      "dependencies": []
-    },
-    {
-      "name": "analyzer",
-      "version": "10.0.1",
-      "dependencies": [
-        "_fe_analyzer_shared",
-        "collection",
-        "convert",
-        "crypto",
-        "glob",
-        "meta",
-        "package_config",
-        "path",
-        "pub_semver",
-        "source_span",
-        "watcher",
-        "yaml"
-      ]
-    },
-    {
-      "name": "_fe_analyzer_shared",
-      "version": "93.0.0",
-      "dependencies": [
-        "meta",
-        "source_span"
-      ]
-    },
-    {
-      "name": "convert",
-      "version": "3.1.2",
-      "dependencies": [
-        "typed_data"
-      ]
-    },
-    {
-      "name": "typed_data",
-      "version": "1.4.0",
-      "dependencies": [
-        "collection"
-      ]
-    },
-    {
-      "name": "watcher",
-      "version": "1.2.1",
-      "dependencies": [
-        "async",
-        "path"
+        "term_glyph"
       ]
     },
     {
@@ -398,7 +363,7 @@
     },
     {
       "name": "build",
-      "version": "4.0.4",
+      "version": "4.0.6",
       "dependencies": [
         "analyzer",
         "crypto",
@@ -414,8 +379,42 @@
       "dependencies": []
     },
     {
+      "name": "source_gen",
+      "version": "4.2.3",
+      "dependencies": [
+        "analyzer",
+        "async",
+        "build",
+        "dart_style",
+        "glob",
+        "path",
+        "pub_semver",
+        "source_span",
+        "yaml"
+      ]
+    },
+    {
+      "name": "dart_style",
+      "version": "3.1.9",
+      "dependencies": [
+        "analyzer",
+        "args",
+        "collection",
+        "package_config",
+        "path",
+        "pub_semver",
+        "source_span",
+        "yaml"
+      ]
+    },
+    {
+      "name": "args",
+      "version": "2.7.0",
+      "dependencies": []
+    },
+    {
       "name": "built_value",
-      "version": "8.12.4",
+      "version": "8.12.6",
       "dependencies": [
         "built_collection",
         "collection",
@@ -430,7 +429,7 @@
     },
     {
       "name": "vm_service",
-      "version": "15.0.2",
+      "version": "15.2.0",
       "dependencies": []
     }
   ],
